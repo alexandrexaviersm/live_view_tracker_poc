@@ -1,6 +1,8 @@
 defmodule LiveViewTrackerPocWeb.LightLive do
   use LiveViewTrackerPocWeb, :live_view
 
+  alias LiveViewTrackerPocWeb.HeroComponent
+
   def mount(_params, _session, socket) do
     socket = assign(socket, brightness: 10, temp: 3000, temp: "3000")
 
@@ -48,6 +50,9 @@ defmodule LiveViewTrackerPocWeb.LightLive do
         </div>
       </form>
     </div>
+    <.live_component module={HeroComponent} id="hero1" content="Component content 1" />
+    <.live_component module={HeroComponent} id="hero2" content="Component content 2" />
+    <.live_component module={HeroComponent} id="hero3" content="Component content 3" />
     """
   end
 
