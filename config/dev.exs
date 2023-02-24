@@ -26,7 +26,8 @@ config :live_view_tracker_poc, LiveViewTrackerPocWeb.Endpoint,
   secret_key_base: "SGq5RwWGQKEj41Ai7ZgWFC9xSfRCXbFD7pz6gM50EQ0WhCoKGgXmaO9Ms6+GF1AP",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
-    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
+    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]},
+    sass: {DartSass, :install_and_run, [:default, ~w(--watch)]}
   ]
 
 # ## SSL Support

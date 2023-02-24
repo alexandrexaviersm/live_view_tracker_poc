@@ -35,3 +35,5 @@ live_view_tracker_poc-*.tar
 npm-debug.log
 /assets/node_modules/
 
+.DS_Store
+
