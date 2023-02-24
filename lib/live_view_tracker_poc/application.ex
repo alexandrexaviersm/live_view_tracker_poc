@@ -17,9 +17,10 @@ defmodule LiveViewTrackerPoc.Application do
       # Start Finch
       {Finch, name: LiveViewTrackerPoc.Finch},
       # Start the Endpoint (http/https)
-      LiveViewTrackerPocWeb.Endpoint
+      LiveViewTrackerPocWeb.Endpoint,
       # Start a worker by calling: LiveViewTrackerPoc.Worker.start_link(arg)
       # {LiveViewTrackerPoc.Worker, arg}
+      LiveViewTrackerPoc.PIDTracker
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
