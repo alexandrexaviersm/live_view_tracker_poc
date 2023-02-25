@@ -20,6 +20,7 @@ defmodule LiveViewTrackerPocWeb.Router do
     get "/", PageController, :home
 
     live "/light", LightLive
+    live "/tracker-dashboard", TrackerDashboardLive
   end
 
   # Other scopes may use custom stacks.
