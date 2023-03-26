@@ -12,39 +12,6 @@ Hooks.TrackDiff = {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Hooks.LineChart = {
   mounted() {
     const { labels, values } = JSON.parse(this.el.dataset.chartData)
